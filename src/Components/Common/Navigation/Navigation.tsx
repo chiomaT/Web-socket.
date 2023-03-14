@@ -11,7 +11,7 @@ import logout from "../../Assets/logout_icon.svg";
 const Navigation = () => {
   return (
     <div className="bg-[#ffffff] w-[98px] shadow-lg h-screen overflow-auto scrollbar-hide fixed top-0 bottom-0 z-50">
-     {/* <div> */}
+      {/* <div> */}
       <div className="py-4 pt-7">
         <img className="w-full h-[38px]" src={logo} alt="Logo" />
       </div>

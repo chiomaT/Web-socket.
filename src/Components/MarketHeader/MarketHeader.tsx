@@ -28,7 +28,7 @@ const MarketHeader = () => {
   return (
     <>
       <PageLayout />
-      <div className="ml-28 mt-8 fixed z-40 bg-[#FAFBFC] container mx-auto px-4 w-full">
+      <div className="ml-28 pt-8  fixed z-40 bg-[#FAFBFC] container mx-auto px-4 w-full">
         <Header pageTitle="Market" />
 
         <div className="flex justify-between">
@@ -68,7 +68,7 @@ const MarketHeader = () => {
                     {value.cashBalance}
                   </h3>
                   <span className="text-xl lg:text-3xl font-bold text-lblack group-hover:text-buyellow transition ease-out duration-200">
-                    {value.cashBalanceValue}
+                  ₦  {value.cashBalanceValue}
                   </span>
                   <div className="flex gap-2">
                     <button className="bg-[#FFF2F0] text-[#E2341D] text-xs rounded-lg py-1 px-3">
@@ -86,7 +86,7 @@ const MarketHeader = () => {
                     {value.securitiesValue}
                   </h3>
                   <span className="text-xl lg:text-3xl font-bold text-lblack group-hover:text-buyellow transition ease-out duration-200">
-                    {value.securitiesValueValue}
+                  ₦ {value.securitiesValueValue}
                   </span>
                   <div className="flex gap-2">
                     <button className="bg-[#FFF2F0] text-[#E2341D] text-xs rounded-lg py-1 px-3">

@@ -31,16 +31,16 @@ const MarketPlace = () => {
   });
 
   const { decrypt } = cipher;
-  if (data?.messages) {
-    console.log("he", data);
-//     const decryptedData = decrypt(data.messages);
+  if (data?.cash_cover) {
+    console.log("he", data.cash_cover);
+    const decryptedData = decrypt(data.cash_cover );
 
-    console.log("response", data.messages);
-    const value = data.messages.map((item:any) => decrypt(item.board_type))
-    console.log("value", value)
+    console.log("response",  decryptedData );
+    // const value = data.map((item:any) => decrypt(item.board_type))
+    // console.log("value", value)
   }
 
-  useEffect(() => {}, [data]);
+  // useEffect(() => {}, [data]);
 
   useEffect(() => {
     // const cipher = new Cipher({
@@ -52,7 +52,7 @@ const MarketPlace = () => {
     //    });
 
     const orderBookSocket = new WebSocket(
-      "wss://comx-sand-api.afexnigeria.com/stream/trades"
+      "wss://comx-sand-api.afex.dev/stream/client-positions?cid=9900153747"
     );
 
     orderBookSocket.onmessage = function (event) {
@@ -118,33 +118,8 @@ const MarketPlace = () => {
           date: "17,oct,2020",
           time: "07.38",
         },
-        {
-          security: "SoyBeans(SSSBS)",
-          board: "X-Traded",
-          orderType: "Sell",
-          matchedPrice: 1792.65,
-          quantity: 2003,
-          date: "17,oct,2020",
-          time: "07.38",
-        },
-        {
-          security: "SoyBeans(SSSBS)",
-          board: "X-Traded",
-          orderType: "Sell",
-          matchedPrice: 1792.65,
-          quantity: 2003,
-          date: "17,oct,2020",
-          time: "07.38",
-        },
-          {
-        security: "SoyBeans(SSSBS)",
-        board: "X-Traded",
-        orderType: "Sell",
-        matchedPrice: 1792.65,
-        quantity: 2003,
-        date: "17,oct,2020",
-        time: "07.38",
-      },
+       
+      
     ]);
 
   }, []);
@@ -152,8 +127,8 @@ const MarketPlace = () => {
   return (
     <>
       <MarketHeader />
-      <div className="mt-[30%] h-full container mx-auto px-4 w-full">
-        <div className="flex justify-between w-full ">
+      <div className="mt-[30%] h-screen container mx-auto px-4 w-full items-center ">
+        <div className="flex justify-between ">
           {/* buy products */}
           <div className="w-[600px]">
             <ScrollTable>
@@ -251,6 +226,7 @@ const MarketPlace = () => {
           </ScrollTable>
         </div>
         </div>
+
     </>
   );
 };
