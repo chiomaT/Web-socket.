@@ -23,7 +23,7 @@ const MarketHeader = () => {
         loanBalanceValue: 8374763,
       },
     ]);
-  }, []);
+  },[]);
 
   return (
     <>

@@ -57,7 +57,7 @@ console.log("Response",result)
   setStateReult(result)
 }
 
-},[data])
+},[data, decrypt])
 
   useEffect(() => {
  const socket = new WebSocket('wss://comx-sand-api.afex.dev/stream/trades');
@@ -66,7 +66,7 @@ socket.addEventListener('message', (event) => {
     let response=JSON.parse(event.data)
     setData(response.messages);
 });
-  }, []);
+  },[]);
 
 
   return (
