@@ -34,3 +34,8 @@ export interface LiveMarketValues {
   title: string;
   value: number;
 }
+
+export interface BreadcrumbModel{
+  label:string;
+  url:string;
+} 

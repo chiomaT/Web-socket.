@@ -6,8 +6,8 @@ import securities_values from "../../Components/Assets/securities_value_graph.sv
 import loan_balance from "../../Components/Assets/loan_balance_report.svg";
 import page_setting from "../../Components/Assets/page_setting_icon.svg";
 import demo from "../../Components/Assets/down_arrow.svg";
-import Header from "../Common/Header/Header";
 import { MonthlyValues } from "../../Components/Data/ProductData";
+import BreadCrum from "../BreadCrum/BreadCrum";
 
 const MarketHeader = () => {
   const [monthlyValues, setMonthlyValues] = useState<MonthlyValues[]>([]);
@@ -28,10 +28,12 @@ const MarketHeader = () => {
   return (
     <>
       <PageLayout />
-      <div className="ml-28 pt-8  fixed z-40 bg-[#FAFBFC] container mx-auto px-4 w-full">
-        <Header pageTitle="Market" />
 
-        <div className="flex justify-between">
+      <div className="ml-28 pt-8  fixed z-40 bg-[#FAFBFC] container mx-auto px-4 w-full">
+      <BreadCrum />
+
+        {/* <Header pageTitle="Market" /> */}
+        <div className="flex justify-between pt-11">
           <div>
             <h1 className="text-xl lg:text-xl font-semibold text-[#1F1F1F]">
               Market
