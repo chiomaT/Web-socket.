@@ -4,7 +4,7 @@ import useBreadcrumbs from "use-react-router-breadcrumbs";
 import arrowRight from "../../Components/Assets/Arrow (1).svg";
 
 const routes = [
-  { path: "/", breadcrumb: "Market" },
+  { path: "/marketplace", breadcrumb: "Market" },
 
 ];
 

@@ -140,7 +140,7 @@ const MarketHeader = () => {
 
           <li>
             <NavLink
-              to="/"
+              to="/marketplace"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center  border-b border-[#D71E0E] font-bold text-[#D71E0E] pb-4"
