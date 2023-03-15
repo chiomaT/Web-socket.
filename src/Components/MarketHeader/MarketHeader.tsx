@@ -127,7 +127,7 @@ const MarketHeader = () => {
         <ul className="flex  gap-8 border-b">
           <li>
             <NavLink
-              to="/"
+              to="/blank"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center bg-red-600 rounded-lg "
@@ -140,7 +140,7 @@ const MarketHeader = () => {
 
           <li>
             <NavLink
-              to="/marketplace"
+              to="/"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center  border-b border-[#D71E0E] font-bold text-[#D71E0E] pb-4"
@@ -153,7 +153,7 @@ const MarketHeader = () => {
 
           <li>
             <NavLink
-              to="/"
+              to="/blank"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center rounded-lg "
@@ -165,7 +165,7 @@ const MarketHeader = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/blank"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center bg-red-600 rounded-lg "
@@ -181,7 +181,7 @@ const MarketHeader = () => {
 
           <li>
             <NavLink
-              to="/"
+              to="/blank"
               className={({ isActive }) =>
                 isActive
                   ? "flex  items-center bg-red-600 rounded-lg "
@@ -197,7 +197,7 @@ const MarketHeader = () => {
 
           <li>
             <NavLink
-              to="/"
+              to="/blank"
               className={({ isActive }) =>
                 isActive
                   ? "flex gap-2 items-center bg-red-600 rounded-lg "

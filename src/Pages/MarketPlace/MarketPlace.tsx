@@ -56,8 +56,7 @@ if(data.length > 0) {
 console.log("Response",result)
   setStateReult(result)
 }
-
-},[data, decrypt])
+},[data,decrypt])
 
   useEffect(() => {
  const socket = new WebSocket('wss://comx-sand-api.afex.dev/stream/trades');
@@ -68,8 +67,7 @@ socket.addEventListener('message', (event) => {
 });
   },[]);
 
-
-  return (
+return (
     <>
       <MarketHeader />
       <div className="mt-[30%] h-screen container mx-auto px-4 w-full items-center ">

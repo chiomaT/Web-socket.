@@ -31,7 +31,7 @@ const Navigation = () => {
 
               <li>
                 <NavLink
-                  to="/marketplace"
+                  to="/"
                   className={({ isActive }) =>
                     isActive
                       ? "flex  justify-center items-center bg-[#F3F9FE] rounded-lg w-[48px] h-[48px]"

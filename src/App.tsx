@@ -8,7 +8,7 @@ function App() {
       <div className="bg-[#fafbfc]">
         <Router>
           <Routes>
-            <Route path="/marketplace" element={<MarketPlace />} />
+            <Route path="/" element={<MarketPlace />} />
           </Routes>
         </Router>
       </div>
